@@ -110,6 +110,10 @@ sudo systemctl stop wg-quick@wg0
 sudo systemctl disable wg-quick@wg0
 sudo systemctl enable --now wg-quick@wg0
 
+
+ادرس فایل وایرگارد
+sudo nano /etc/wireguard/wg0.conf
+
 ```
 for transfer
 ```
