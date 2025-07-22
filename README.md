@@ -103,7 +103,12 @@ export VISUAL=nano; crontab -e
 crontab -e
 * * * * * /bin/systemctl is-active --quiet udp2raw.service || /bin/systemctl 
 
-
+دستورات وایرگارد
+sudo systemctl status wg-quick@wg0
+sudo systemctl restart wg-quick@wg0
+sudo systemctl stop wg-quick@wg0
+sudo systemctl disable wg-quick@wg0
+sudo systemctl enable --now wg-quick@wg0
 
 ```
 for transfer
