@@ -17,7 +17,7 @@ install_udp2raw() {
   apt update
   apt install -y git build-essential golang
   TMP=$(mktemp -d)
-  git clone https://github.com/MikeWang000000/udp2raw.git "$TMP/udp2raw"
+  #git clone https://github.com/MikeWang000000/udp2raw.git "$TMP/udp2raw"
   make -C "$TMP/udp2raw"
   mkdir -p "$BIN_DIR"
   cp -r "$TMP/udp2raw"/* "$BIN_DIR/"
